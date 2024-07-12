@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flea Market Features</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            color: #007bff;
+        }
+
+        .feature {
+            margin-bottom: 2rem;
+        }
+
+        .feature-details {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Flea Market</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Flea Market Website Features</h1>
+            <p class="lead">Explore the amazing features that make our platform the perfect place for buying and selling unique items.</p>
+        </div>
+
+        <div class="row feature">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-user-plus feature-icon"></i>
+                <h4>User Registration and Profiles</h4>
+            </div>
+            <div class="col-md-8">
+                <ul>
+                    <li>Simple registration process using email, social media, or Google account.</li>
+                    <li>Personalize your profile with a photo, bio, and contact information.</li>
+                    <li>Verified badges for trusted sellers to ensure buyer confidence.</li>
+                </ul>
+                <button class="btn btn-info mt-2" onclick="toggleDetails('userRegistrationDetails')">More Details</button>
+                <div id="userRegistrationDetails" class="feature-details">
+                    <p>Our registration process is streamlined to get you started quickly. Verified sellers undergo a rigorous verification process to ensure the highest level of trust and security within our marketplace.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row feature">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-list-alt feature-icon"></i>
+                <h4>Listing Management</h4>
+            </div>
+            <div class="col-md-8">
+                <ul>
+                    <li>Add items with detailed descriptions, multiple photos, and pricing information.</li>
+                    <li>Organize items into categories and use tags for better search visibility.</li>
+                    <li>Track inventory levels and manage stock directly from your dashboard.</li>
+                </ul>
+                <button class="btn btn-info mt-2" onclick="toggleDetails('listingManagementDetails')">More Details</button>
+                <div id="listingManagementDetails" class="feature-details">
+                    <p>Our listing management tools allow you to upload high-quality images and detailed descriptions to attract more buyers. You can also categorize your items and add tags to make them easier to find.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row feature">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-search feature-icon"></i>
+                <h4>Search and Navigation</h4>
+            </div>
+            <div class="col-md-8">
+                <ul>
+                    <li>Search by keywords, categories, price range, and location.</li>
+                    <li>Narrow down search results using filters like condition (new/used), seller ratings, and distance.</li>
+                    <li>Visualize item locations on a map for easier finding of local sellers.</li>
+                </ul>
+                <button class="btn btn-info mt-2" onclick="toggleDetails('searchNavigationDetails')">More Details</button>
+                <div id="searchNavigationDetails" class="feature-details">
+                    <p>Our advanced search and navigation tools help you find exactly what you’re looking for. Use filters and the map view to quickly locate items that meet your criteria.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row feature">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-comments feature-icon"></i>
+                <h4>Communication Tools</h4>
+            </div>
+            <div class="col-md-8">
+                <ul>
+                    <li>Secure in-platform messaging between buyers and sellers.</li>
+                    <li>Receive real-time notifications for messages, offers, and updates on listed items.</li>
+                    <li>Rate transactions and leave reviews to build trust within the community.</li>
+                </ul>
+                <button class="btn btn-info mt-2" onclick="toggleDetails('communicationToolsDetails')">More Details</button>
+                <div id="communicationToolsDetails" class="feature-details">
+                    <p>Our secure messaging system ensures privacy and ease of communication. Stay informed with real-time notifications and help build a trustworthy community through reviews and ratings.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row feature">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-credit-card feature-icon"></i>
+                <h4>Payment and Transactions</h4>
+            </div>
+            <div class="col-md-8">
+                <ul>
+                    <li>Multiple payment options including credit/debit cards, PayPal, and other secure methods.</li>
+                    <li>Track all your purchases and sales in one place.</li>
+                    <li>Easy process for handling refunds and resolving disputes.</li>
+                </ul>
+                <button class="btn btn-info mt-2" onclick="toggleDetails('paymentTransactionsDetails')">More Details</button>
+                <div id="paymentTransactionsDetails" class="feature-details">
+                    <p>We offer secure and versatile payment options to facilitate smooth transactions. Our platform keeps track of your transactions and provides easy solutions for refunds and disputes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row feature">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-tags feature-icon"></i>
+                <h4>Promotions and Discounts</h4>
+            </div>
+            <div class="col-md-8">
+                <ul>
+                    <li>Create sales, discounts, and special offers to attract buyers.</li>
+                    <li>Option to highlight listings at the top of search results for increased visibility.</li>
+                </ul>
+                <button class="btn btn-info mt-2" onclick="toggleDetails('promotionsDiscountsDetails')">More Details</button>
+                <div id="promotionsDiscountsDetails" class="feature-details">
+                    <p>Our promotional tools help you attract more buyers by offering discounts and special deals. Highlight your listings for increased visibility and sales.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row feature">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-mobile-alt feature-icon"></i>
+                <h4>Mobile Compatibility</h4>
+            </div>
+            <div class="col-md-8">
+                <ul>
+                    <li>Optimized for mobile devices, providing a smooth experience on smartphones and tablets.</li>
+                    <li>Dedicated mobile app for iOS and Android for on-the-go access to all features.</li>
+                </ul>
+                <button class="btn btn-info mt-2" onclick="toggleDetails('mobileCompatibilityDetails')">More Details</button>
+                <div id="mobileCompatibilityDetails" class="feature-details">
+                    <p>Access our platform seamlessly from any device. Our mobile app ensures you can manage your buying and selling activities on the go.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row feature">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-chart-line feature-icon"></i>
+                <h4>Analytics and Reporting</h4>
+            </div>
+            <div class="col-md-8">
+                <ul>
+                    <li>Comprehensive dashboard showing sales, traffic, and performance metrics.</li>
+                    <li>Generate detailed reports on sales, inventory, and customer behavior.</li>
+                </ul>
+                <button class="btn btn-info mt-2" onclick="toggleDetails('analyticsReportingDetails')">More Details</button>
+                <div id="analyticsReportingDetails" class="feature-details">
+                    <p>Our analytics tools provide you with valuable insights into your sales performance and customer behavior, helping you make data-driven decisions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row feature">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-headset feature-icon"></i>
+                <h4>Customer Support</h4>
+            </div>
+            <div class="col-md-8">
+                <ul>
+                    <li>Extensive FAQs and guides to assist with common issues.</li>
+                    <li>Access to real-time support through live chat for quick problem resolution.</li>
+                    <li>Engage with other users and get advice from experienced sellers and buyers.</li>
+                </ul>
+                <button class="btn btn-info mt-2" onclick="toggleDetails('customerSupportDetails')">More Details</button>
+                <div id="customerSupportDetails" class="feature-details">
+                    <p>Our customer support includes extensive FAQs and real-time live chat support to help you resolve issues quickly. Engage with our community for additional support and advice.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
